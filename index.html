@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RBG</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="parent-box">
+        <div class="ranges">
+            <input type="range" class="range" id="red-range" min="0" max="255" value="0" onchange="changedValue('red', this.value)">
+            <input type="range" class="range" id="green-range" min="0" max="255" value="0" onchange="changedValue('green', this.value)">
+            <input type="range" class="range" id="blue-range" min="0" max="255" value="0" onchange="changedValue('blue', this.value)">
+        </div>
+        <div class="ranges-names">
+            <h2 class="range-name" id="red-range-name">Red</h2>
+            <h2 class="range-name" id="green-range-name">Green</h2>
+            <h2 class="range-name" id="blue-range-name">Blue</h2>
+        </div>
+        <div class="ranges-current-values">
+            <h2 class="range-value" id="red-range-value">0</h2>
+            <h2 class="range-value" id="green-range-value">0</h2>
+            <h2 class="range-value" id="blue-range-value">0</h2>
+        </div>
+        <div class="copy-button-parent-box">
+            <button class="button" id="copy-button" onclick="copyRGB()">Copy RGB</button>
+        </div>
+    </div>
+</body>
+</html>
